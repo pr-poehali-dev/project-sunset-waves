@@ -68,8 +68,8 @@ export function SiteHeader() {
             <Button variant="ghost" size="sm" className="neumorphic-button" asChild>
               <a href="#login">Войти</a>
             </Button>
-            <Button size="sm" className="neumorphic-button-primary" asChild>
-              <a href="#pricing">
+            <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white shadow-[0_0_12px_rgba(34,197,94,0.3)] hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] transition-all" asChild>
+              <a href="/new-listing">
                 Разместить
                 <motion.div
                   className="ml-1"

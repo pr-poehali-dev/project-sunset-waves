@@ -66,7 +66,7 @@ export function TestimonialsSection() {
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
-                        <Avatar className="glassmorphic-avatar border-2 border-transparent group-hover:border-red-500 transition-colors">
+                        <Avatar className="glassmorphic-avatar border-2 border-transparent group-hover:border-green-500 transition-colors">
                           <AvatarImage
                             src={`/placeholder.svg?height=40&width=40&text=${testimonial.avatar}`}
                             alt={testimonial.name}
@@ -75,7 +75,7 @@ export function TestimonialsSection() {
                         </Avatar>
                       </motion.div>
                       <div>
-                        <h3 className="text-lg font-medium tracking-tight group-hover:text-red-500 transition-colors">
+                        <h3 className="text-lg font-medium tracking-tight group-hover:text-green-500 transition-colors">
                           {testimonial.name}
                         </h3>
                         <p className="text-sm text-muted-foreground opacity-70">{testimonial.role}</p>

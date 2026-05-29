@@ -81,7 +81,7 @@ export function PricingSection() {
             <ScrollReveal key={index} delay={index * 0.1}>
               <Card className={`h-full flex flex-col glassmorphic-card ${plan.popular ? "border-glow-red" : ""}`}>
                 {plan.popular && (
-                  <div className="absolute top-0 right-0 -mt-2 -mr-2 px-3 py-1 bg-red-500 text-white text-xs font-medium rounded-full">
+                  <div className="absolute top-0 right-0 -mt-2 -mr-2 px-3 py-1 bg-green-500 text-white text-xs font-medium rounded-full">
                     Хит
                   </div>
                 )}
@@ -105,7 +105,7 @@ export function PricingSection() {
 
                   {plan.popular ? (
                     <AnimatedGradientBorder
-                      colors={["#dc2626", "#4b5563", "#dc2626", "#4b5563"]}
+                      colors={["#22c55e", "#10b981", "#22c55e", "#10b981"]}
                       borderWidth={1}
                       duration={8}
                     >

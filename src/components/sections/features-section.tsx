@@ -93,7 +93,7 @@ export function FeaturesSection() {
                       </div>
                       <CardTitle className="mt-4 tracking-tight relative">
                         {feature.title}
-                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -108,7 +108,7 @@ export function FeaturesSection() {
                         status={feature.progress === 100 ? "success" : "default"}
                         showPercentage
                         variant="minimal"
-                        progressColor={feature.progress === 100 ? "bg-green-500" : "bg-red-500"}
+                        progressColor={feature.progress === 100 ? "bg-green-500" : "bg-emerald-500"}
                       />
                     </CardContent>
                   </Card>

@@ -5,21 +5,21 @@ import { ArrowRight } from "lucide-react"
 export function BlogSection() {
   const blogPosts = [
     {
-      title: "Создание современных UI с PixelForge",
-      description: "Узнайте, как создавать красивые интерфейсы с нашей библиотекой компонентов.",
-      date: "15 мая 2023",
+      title: "Как продать товар быстро: 7 советов",
+      description: "Разбираем, как правильно оформить объявление, чтобы получить первых покупателей уже в день публикации.",
+      date: "20 мая 2026",
       readTime: "5 мин",
     },
     {
-      title: "Мощь Tailwind CSS и React",
-      description: "Как Tailwind CSS и React могут преобразить ваш рабочий процесс разработки.",
-      date: "28 апреля 2023",
-      readTime: "7 мин",
+      title: "Услуги, которые ищут чаще всего",
+      description: "Топ-10 категорий услуг с наибольшим спросом на платформе — узнайте, что покупают прямо сейчас.",
+      date: "12 мая 2026",
+      readTime: "4 мин",
     },
     {
-      title: "Доступные компоненты",
-      description: "Лучшие практики создания UI-компонентов, доступных для всех пользователей.",
-      date: "10 апреля 2023",
+      title: "Как защитить себя при покупке онлайн",
+      description: "Практические советы по безопасным сделкам: на что обращать внимание и как избежать мошенников.",
+      date: "5 мая 2026",
       readTime: "6 мин",
     },
   ]
@@ -30,9 +30,9 @@ export function BlogSection() {
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl">Статьи</h2>
+              <h2 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl">Полезные статьи</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70">
-                Будьте в курсе наших новостей, туториалов и лучших практик.
+                Советы для покупателей и продавцов, обзоры трендов и новости платформы.
               </p>
             </div>
           </div>

@@ -8,25 +8,25 @@ import { AnimatedBackground } from "@/components/ui/animated-background"
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Алексей Иванов",
-      role: "Frontend-разработчик",
+      name: "Андрей Смирнов",
+      role: "Продавец электроники",
       content:
-        "Эта библиотека сэкономила мне кучу времени на разработку. Компоненты красиво оформлены и легко настраиваются.",
-      avatar: "АИ",
+        "За первый месяц продал товаров на 80 000 ₽. Площадка удобная, покупатели приходят сами — просто размести и жди.",
+      avatar: "АС",
     },
     {
-      name: "Мария Петрова",
-      role: "UI/UX-дизайнер",
+      name: "Елена Волкова",
+      role: "Мастер маникюра",
       content:
-        "Как дизайнер, я ценю внимание к деталям в этих компонентах. Они не только функциональны, но и эстетичны.",
-      avatar: "МП",
+        "Раньше клиентов искала через соцсети, теперь запись полная на 2 недели вперёд. Сервис реально работает!",
+      avatar: "ЕВ",
     },
     {
-      name: "Дмитрий Козлов",
-      role: "Продакт-менеджер",
+      name: "Игорь Новиков",
+      role: "Постоянный покупатель",
       content:
-        "Продуктивность нашей команды значительно выросла с этой библиотекой. Документация отличная, компоненты надежные.",
-      avatar: "ДК",
+        "Нашёл здесь всё, что искал: от запчастей для авто до репетитора по английскому. Удобный поиск и быстрая доставка.",
+      avatar: "ИН",
     },
   ]
 
@@ -39,13 +39,13 @@ export function TestimonialsSection() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <AnimatedText
-                text="Отзывы пользователей"
+                text="Что говорят наши пользователи"
                 variant="heading"
                 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl"
                 animation="slide"
               />
               <AnimatedText
-                text="Узнайте, что говорят разработчики и дизайнеры, использующие нашу библиотеку."
+                text="Тысячи покупателей и продавцов уже оценили удобство нашей платформы."
                 variant="paragraph"
                 className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70"
                 animation="fade"

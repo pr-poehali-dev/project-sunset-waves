@@ -1,4 +1,4 @@
-import { Code, Layers, Palette, Sparkles, Zap, Shield } from "lucide-react"
+import { ShoppingBag, Search, Star, Shield, Zap, Users } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollReveal } from "@/components/scroll-reveal"
@@ -11,44 +11,44 @@ import { ProgressCard } from "@/components/ui-library/cards/progress-card"
 export function FeaturesSection() {
   const features = [
     {
-      icon: <Layers className="h-10 w-10 text-red-500" />,
-      title: "Модульные компоненты",
-      description: "Собирайте сложные интерфейсы из переиспользуемых компонентов.",
+      icon: <ShoppingBag className="h-10 w-10 text-red-500" />,
+      title: "Тысячи товаров",
+      description: "Широкий каталог товаров от проверенных продавцов в одном месте.",
       progress: 100,
       borderClass: "border-glow-red",
     },
     {
-      icon: <Palette className="h-10 w-10 text-blue-500" />,
-      title: "Гибкие темы",
-      description: "Легко настраивайте цвета, шрифты и стили под ваш бренд.",
+      icon: <Search className="h-10 w-10 text-blue-500" />,
+      title: "Умный поиск",
+      description: "Находите нужное мгновенно — по категории, цене, рейтингу и местоположению.",
       progress: 90,
       borderClass: "border-glow-blue",
     },
     {
       icon: <Zap className="h-10 w-10 text-yellow-500" />,
-      title: "Высокая скорость",
-      description: "Легковесные компоненты для быстрой загрузки и работы.",
+      title: "Быстрое размещение",
+      description: "Разместите объявление о товаре или услуге за пару минут.",
       progress: 95,
       borderClass: "border-glow-yellow",
     },
     {
-      icon: <Code className="h-10 w-10 text-green-500" />,
-      title: "TypeScript из коробки",
-      description: "Полная типизация для лучшего DX и меньше багов.",
+      icon: <Shield className="h-10 w-10 text-green-500" />,
+      title: "Безопасные сделки",
+      description: "Защита покупателя и продавца на всех этапах — от заказа до получения.",
       progress: 100,
       borderClass: "border-glow-green",
     },
     {
-      icon: <Sparkles className="h-10 w-10 text-purple-500" />,
-      title: "Анимации",
-      description: "Красивые анимации и переходы на базе Framer Motion.",
+      icon: <Star className="h-10 w-10 text-purple-500" />,
+      title: "Отзывы и рейтинги",
+      description: "Честные оценки от реальных покупателей помогут сделать правильный выбор.",
       progress: 85,
       borderClass: "border-glow-purple",
     },
     {
-      icon: <Shield className="h-10 w-10 text-orange-500" />,
-      title: "Доступность",
-      description: "Компоненты соответствуют стандартам WCAG для всех пользователей.",
+      icon: <Users className="h-10 w-10 text-orange-500" />,
+      title: "Сообщество продавцов",
+      description: "Тысячи активных продавцов и исполнителей услуг по всей стране.",
       progress: 92,
       borderClass: "border-glow-orange",
     },
@@ -63,13 +63,13 @@ export function FeaturesSection() {
           <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
             <div className="space-y-4">
               <AnimatedText
-                text="Возможности для современной веб-разработки"
+                text="Всё для удобных покупок и продаж"
                 variant="heading"
                 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl gradient-text"
                 animation="slide"
               />
               <AnimatedText
-                text="Наша библиотека содержит все необходимое для создания красивых, интерактивных и доступных веб-приложений."
+                text="Наш маркетплэйс создан так, чтобы покупка и продажа товаров и услуг была максимально простой, быстрой и безопасной."
                 variant="paragraph"
                 className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70"
                 animation="fade"

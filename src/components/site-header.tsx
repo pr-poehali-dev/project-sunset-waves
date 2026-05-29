@@ -9,12 +9,12 @@ import { Icons } from "@/components/icons"
 import { useScrollPosition } from "@/hooks/use-scroll-position"
 
 const navItems = [
-  { name: "Главная", href: "#home" },
-  { name: "Каталог", href: "#features" },
-  { name: "Тарифы", href: "#pricing" },
-  { name: "Отзывы", href: "#testimonials" },
-  { name: "Блог", href: "#blog" },
-  { name: "FAQ", href: "#faq" },
+  { name: "Главная", href: "/", external: true },
+  { name: "Каталог", href: "/catalog", external: true },
+  { name: "Тарифы", href: "#pricing", external: false },
+  { name: "Отзывы", href: "#testimonials", external: false },
+  { name: "Блог", href: "#blog", external: false },
+  { name: "FAQ", href: "#faq", external: false },
 ]
 
 export function SiteHeader() {
@@ -49,11 +49,9 @@ export function SiteHeader() {
               key={item.name}
               href={item.href}
               className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
-              onClick={(e) => {
+              onClick={item.external ? undefined : (e) => {
                 e.preventDefault()
-                document.querySelector(item.href)?.scrollIntoView({
-                  behavior: "smooth",
-                })
+                document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" })
               }}
             >
               {item.name}
@@ -133,11 +131,9 @@ export function SiteHeader() {
                       key={item.name}
                       href={item.href}
                       className="px-4 py-3 text-base font-medium text-foreground hover:bg-muted rounded-md transition-colors"
-                      onClick={(e) => {
+                      onClick={item.external ? closeMobileMenu : (e) => {
                         e.preventDefault()
-                        document.querySelector(item.href)?.scrollIntoView({
-                          behavior: "smooth",
-                        })
+                        document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" })
                         closeMobileMenu()
                       }}
                     >

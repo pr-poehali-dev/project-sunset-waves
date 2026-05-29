@@ -1,3 +1,4 @@
+import React from "react"
 import {
   Command,
   AlertTriangle,
@@ -27,7 +28,15 @@ import {
 export type Icon = LucideIcon
 
 export const Icons = {
-  logo: Command,
+  logo: ({ className, ...props }: React.HTMLAttributes<HTMLImageElement>) => (
+    <img
+      src="https://cdn.poehali.dev/projects/3c89a9cf-f0da-4b34-b704-35df495d08cd/files/f531eb46-2a84-4b2e-8dc3-78460250919d.jpg"
+      alt="Попугаи"
+      className={className}
+      style={{ borderRadius: "50%", objectFit: "cover" }}
+      {...props}
+    />
+  ),
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,

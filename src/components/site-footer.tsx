@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="flex flex-1 flex-col gap-4">
             <a href="/" className="flex items-center gap-2">
               <Icons.logo className="h-6 w-6" />
-              <span className="font-heading text-xl tracking-tight">Маркетплэйс</span>
+              <span className="font-heading text-xl tracking-tight">Попугаи</span>
             </a>
             <p className="text-muted-foreground max-w-sm opacity-70">
               Одна площадка для покупки и продажи любых товаров и услуг. Безопасные сделки, удобный поиск и тысячи проверенных продавцов.
@@ -145,7 +145,7 @@ export function SiteFooter() {
         </div>
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-muted-foreground opacity-70">
-            &copy; {new Date().getFullYear()} Маркетплэйс. Все права защищены.
+            &copy; {new Date().getFullYear()} Попугаи. Все права защищены.
           </p>
           <div className="flex gap-4">
             <a

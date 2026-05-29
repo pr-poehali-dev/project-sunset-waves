@@ -39,7 +39,7 @@ export function SiteHeader() {
       <div className="container px-4 md:px-6 flex h-16 items-center justify-between">
         <a href="/" className="flex items-center space-x-2 z-10">
           <Icons.logo className="h-6 w-6" />
-          <span className="font-heading text-xl tracking-tight">Маркетплэйс</span>
+          <span className="font-heading text-xl tracking-tight">Попугаи</span>
         </a>
 
         {/* Desktop Navigation - Hidden on mobile */}
@@ -115,7 +115,7 @@ export function SiteHeader() {
               <div className="flex items-center justify-between p-4 border-b border-border">
                 <a href="/" className="flex items-center space-x-2" onClick={closeMobileMenu}>
                   <Icons.logo className="h-6 w-6" />
-                  <span className="font-heading text-lg">Маркетплэйс</span>
+                  <span className="font-heading text-lg">Попугаи</span>
                 </a>
                 <button
                   onClick={closeMobileMenu}
